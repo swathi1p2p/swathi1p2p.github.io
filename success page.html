@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Successful</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #001f3f;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        .success-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            color: #001f3f;
+        }
+
+        .success-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .success-container p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .success-container a {
+            color: #001f3f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="success-container">
+    <h1>Appointment Successful!</h1>
+    <p>Thank you for booking an appointment with us. You will be redirected to the home page shortly.</p>
+    <p>If you are not redirected, <a href="index.html">click here</a> to go to the home page.</p>
+</div>
+
+<script>
+    // Redirect to the home page after 5 seconds
+    setTimeout(() => {
+        window.location.href = 'index.html';
+    }, 5000);
+</script>
+
+</body>
+</html>

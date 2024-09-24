@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #001f3f; /* Navy blue background */
+            color: white; /* White text for readability */
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            color: #FFD700; /* Gold color for title */
+            margin-bottom: 20px;
+        }
+
+        .section-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: #001a33; /* Dark navy for card background */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+            max-width: 300px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 20px;
+            color: #FFD700; /* Gold color for headings */
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #ddd; /* Light gray text for description */
+        }
+    </style>
+</head>
+<body>
+    <section id="services" class="container">
+        <h2 class="section-title">Our Services</h2>
+        <div class="section-content">
+            <div class="card">
+                <img src="https://t4.ftcdn.net/jpg/01/72/61/49/360_F_172614907_eofKjktVf1pTGlJaY9lY4MZudfa0ZGC4.jpg" alt="Beds">
+                <h3>Comfortable Beds</h3>
+                <p>We provide the most comfortable beds to ensure your rest and recovery are optimal.</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSe90oAjqih77l5vwSWjZKIGZwRVdIWkxDIyg&s" alt="Food">
+                <h3>Nutritious Food</h3>
+                <p>Our kitchen serves nutritious and delicious meals tailored to patient needs.</p>
+            </div>
+            <div class="card">
+                <img src="https://c0.wallpaperflare.com/preview/988/68/836/patient-nurse-human-activity.jpg" alt="24/7 Care">
+                <h3>24/7 Care</h3>
+                <p>Our medical staff is available around the clock to provide care and support.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

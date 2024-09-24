@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <style>
+        body {
+            background-color: #001f3f; /* Navy blue background */
+            color: white; /* White text for contrast */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .section-title {
+            background: #dedede;
+            font-size: 26px;
+            border-radius: 60px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .section-content {
+            background: #001f3f; /* Navy blue for section content */
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center cards */
+        }
+
+        .card {
+            background: white; /* White background for the cards */
+            border-radius: 10px;
+            margin: 20px;
+            padding: 10px;
+            width: 300px; /* Fixed width for consistency */
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        .card img {
+            border-radius: 10px; /* Rounded corners for the images */
+            width: 100%; /* Responsive image width */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        h3 {
+            font-size: 19px;
+            margin: 10px 0;
+            color: #001f3f; /* Navy blue text for doctor names */
+        }
+
+        p {
+            font-size: 14px;
+            color: #333; /* Dark text for description */
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <section id="doctors" class="container">
+            <h2 class="section-title">Meet Our Doctors</h2><br>
+            <div class="section-content"><br>
+
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8pnF-0g0pR3dVKOe4GzIqRJH928W-3NfE5Q&s" alt="Doctor 3">
+                    <h3>Dr. Sai Pallavi (Cardiologist)</h3>
+                    <p>Specializes in cardiac care with 10 years of experience.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://th.bing.com/th?id=OIP.hGxt69gLYYdz7pxw8fjQoAAAAA&w=226&h=226&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="Doctor 1">
+                    <h3>Dr. John Doe (Dentist)</h3>
+                    <p>15 years of experience in providing top-notch dental care.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.vUN9yN0tkqKIR2Z273DuswHaHa?w=166&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Doctor 2">
+                    <h3>Dr. Jane Smith (Pediatrician)</h3>
+                    <p>Expert in child healthcare with over 12 years of experience.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.SPg1NwjIp_oOAhegVurmCgHaEK?w=279&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="Doctor 3">
+                    <h3>Dr. Emily Johnson (Orthopedic Surgeon)</h3>
+                    <p>Experienced in surgical and non-surgical orthopedic care.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://th.bing.com/th/id/OIP.6nvhrs_D0MrLvQb7-41GNQHaFg?w=630&h=469&rs=1&pid=ImgDetMain" alt="Doctor 1">
+                    <h3>Dr. Krishna Rao (Orthopedic Surgeon)</h3>
+                    <p>Specializes in joint replacements and sports medicine.</p>
+                </div>
+
+                <div class="card">
+                    <img src="https://st4.depositphotos.com/1017986/21088/i/450/depositphotos_210888716-stock-photo-happy-doctor-with-clipboard-at.jpg" alt="Doctor 2">
+                    <h3>Dr. Arjun Reddy (Psychiatrist)</h3>
+                    <p>Provides comprehensive mental health services.</p>
+                </div>
+            </div>
+        </section>
+    </center>
+</body>
+</html>

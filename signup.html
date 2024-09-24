@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System - Signup</title>
+    <style>
+        body {
+            background-image: url('hsp66.jpg'); /* Ensure the path to your image is correct */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 700px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            background-color: rgba(173, 216, 230, 0.9); /* Light blue with transparency */
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+            font-size: 16px;
+            color: black;
+        }
+
+        input {
+            padding: 8px;
+            margin-top: 5px;
+            width: 90%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #357abd;
+        }
+
+        h2 {
+            color: #4a90e2;
+        }
+    </style>
+</head>
+<body>
+    <section id="login-page" class="container">
+        <h2 class="section-title">SIGN UP</h2>
+        <form id="signupForm">
+            <label>First Name: 
+                <input type="text" id="firstname" placeholder="First Name" required>
+            </label>
+            <label>Last Name: 
+                <input type="text" id="lastname" placeholder="Last Name" required>
+            </label>
+            <label>Email: 
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+            </label>
+            <label>Phone Number: 
+                <input type="tel" id="contactNumber" placeholder="Contact Number" required>
+            </label>
+            <label>Username: 
+                <input type="text" id="username" placeholder="Username" required>
+            </label>
+            <label>Password: 
+                <input type="password" id="password" placeholder="Password" required>
+            </label>
+            <label>Confirm Password: 
+                <input type="password" id="confirmpassword" placeholder="Confirm Password" required>
+            </label>
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Validate password match
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmpassword').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+
+            // Show a success message
+            alert('Registration Successful!');
+
+            // Redirect to the home page
+            window.location.href = 'index.html'; // Ensure this path matches the location of your home page
+        });
+    </script>
+</body>
+</html>
